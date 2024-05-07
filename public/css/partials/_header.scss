@@ -1,0 +1,60 @@
+@import "./variables";
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: $backgroundColor;
+}
+
+.headerLogoContainer{
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo{
+    width: 180px;
+}
+
+.headerOpenNavbarButtonContainer{
+    display: flex;
+    align-items: center;
+}
+
+.headerOpenNavbarButton{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.openNavbarIcon{
+    width: 35px;
+}
+
+.headerNavbar{
+    display: none;
+}
+
+.headerNavbarLinksContainer{
+
+}
+
+.headerNavbarLink{
+
+}
+
+.headerCloseNavbarButtonContainer{
+
+}
+
+.headerCloseNavbarButton{
+
+}
+
+.closeNavbarIcon{
+    
+}
