@@ -1,6 +1,18 @@
 .bannerSection{
     height: 100vh;
     background-image: url("/images/bannerSectionMobile.webp");
-    background-position: right;
     background-size: cover;
+}
+
+@media (width >= 992px) {
+    .bannerSection{
+        background-image: url("/images/bannerSectionDesktop.webp");
+        background-position: left;
+    }
+}
+
+@media (width >= 1200px) {
+    .bannerSection{
+        background-position: center;
+    }
 }

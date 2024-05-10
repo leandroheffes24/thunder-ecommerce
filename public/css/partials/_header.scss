@@ -106,3 +106,121 @@ header{
     width: 35px;
     color: rgb(110, 110, 110);
 }
+
+@media (width >= 768px){
+    header{
+        padding: 15px 40px;
+    }
+
+    .headerScrolled{
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+
+    .headerLogo{
+        width: 200px;
+    }
+
+    .openNavbarIcon{
+        width: 45px;
+    }
+
+    .headerNavbar{
+        padding-left: 50px;
+    }
+
+    .headerNavbarTextContainer{
+        width: 35%;
+    }
+
+    .headerNavbarText{
+        font-size: 11rem;
+    }
+
+    .headerNavbarLinksContainer{
+        width: 65%;
+        gap: 60px;
+        padding-left: 80px;
+    }
+
+    .headerNavbarLink{
+        font-size: 2rem;
+    }
+
+    .closeNavbarIcon{
+        width: 45px;
+    }
+}
+
+@media (width >= 992px) {
+    header{
+        padding: 10px 40px;
+    }
+
+    .headerScrolled{
+        box-shadow: 0px 0px 10px 0px gray;
+    }
+
+    .headerLogo{
+        width: 130px;
+    }
+
+    .headerOpenNavbarButtonContainer{
+        display: none;
+    }
+
+    .headerNavbar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: static;
+        background-color: transparent;
+        padding-left: 0;
+        width: 45%;
+        height: auto;
+        top: none;
+        left: none;
+        z-index: auto;
+    }
+
+    .headerNavbarTextContainer{
+        display: none;
+    }
+
+    .headerNavbarLinksContainer{
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: transparent;
+        width: 100%;
+        gap: 0;
+        padding-left: 0;
+    }
+
+    .headerNavbarLink{
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    .headerCloseNavbarButtonContainer{
+        display: none;
+    }
+}
+
+@media (width >= 1200px) {
+    header{
+        padding: 10px 40px;
+    }
+
+    .headerLogo{
+        width: 150px;
+    }
+
+    .headerNavbar{
+        width: 50%;
+    }
+
+    .headerNavbarLink{
+        font-size: .9rem;
+    }
+}
