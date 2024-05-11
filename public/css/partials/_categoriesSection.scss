@@ -1,40 +1,5 @@
 @import "./variables";
 
 .categoriesSection{
-    padding: 50px 20px;
-}
-
-.categoriesContainer{
-    border: 1px solid greenyellow;
-    display: flex;
-    gap: 10px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.categoryContainer{
-    border: 1px solid blue;
-    background-color: $categoryBoxBackgroundColor;
-    width: 220px;
-    height: 220px;
     position: relative;
-}
-
-.categoryTextContainer{
-    color: $categoryBoxTextColor;
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    bottom: 15%;
-    left: 5%;
-}
-
-.categoryName{
-    font-size: 1.4rem;
-}
-
-.categoryQuantity{
-    font-size: .7rem;
 }
