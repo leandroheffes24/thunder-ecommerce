@@ -1,95 +1,29 @@
 @import "./variables";
 
 .categoriesSection{
-    padding: 40px 20px;
-}
-
-.categoriesContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 15px;
+    padding: 50px 20px;
 }
 
 .categoryContainer{
+    width: 200px;
+    height: 200px;
     background-color: $categoryContainerBackgroundColor;
-    width: 150px;
-    height: 150px;
     position: relative;
 }
 
 .categoryTextContainer{
-    color: $categoryContainerTextColor;
     position: absolute;
-    left: 15%;
-    bottom: 15%;
+    bottom: 10%;
+    left: 10%;
 }
 
 .categoryName{
-    font-size: 1.2rem;
-    font-weight: 500;
+    color: $categoryContainerTextColor;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .categoryQuantity{
-    font-size: .7rem;
-}
-
-@media (width >= 768px){
-    .categoriesSection{
-        padding: 60px 40px;
-    }
-
-    .categoriesContainer{
-        gap: 35px;
-    }
-
-    .categoryContainer{
-        width: 200px;
-        height: 200px;
-    }
-
-    .categoryName{
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-
-    .categoryQuantity{
-        font-size: .9rem;
-    }
-}
-
-@media (width >= 992px){
-    .categoriesContainer{
-        gap: 25px;
-    }
-
-    .categoryContainer{
-        width: 160px;
-        height: 160px;
-    }
-
-    .categoryName{
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-
-    .categoryQuantity{
-        font-size: .7rem;
-    }
-}
-
-@media (width >= 1200px){
-    .categoriesContainer{
-        gap: 35px;
-    }
-
-    .categoryContainer{
-        width: 180px;
-        height: 180px;
-    }
-
-    .categoryName{
-        font-size: 1.3rem;
-        font-weight: 600;
-    }
+    color: $categoryContainerTextColor;
+    font-size: .8rem;
 }

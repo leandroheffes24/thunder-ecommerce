@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thunder⚡</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <script src="/js/headerNavbarScript.js" defer></script>
     <script src="/js/headerScrollScript.js" defer></script>
 </head>
@@ -19,5 +20,19 @@
     <%- include("partials/categoriesSection") %>
     <!-- ******************************** END MAIN ******************************** -->
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide', {
+                autoWidth: true,
+                autoHeight: true,
+                gap: '1rem',
+                pagination: false,
+                arrows: false
+            } );
+            splide.mount();
+        } );
+    </script>
 </body>
 </html>
