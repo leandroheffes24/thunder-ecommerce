@@ -1,2 +1,11 @@
 @import "./variables";
 
+.allProductsBannerSection{
+    background-image: url("/images/allProductsBannerSection.webp");
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+
+}

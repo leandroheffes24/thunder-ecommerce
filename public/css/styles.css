@@ -315,4 +315,13 @@ header {
   .categoryQuantity {
     font-size: 1rem;
   }
+}
+.allProductsBannerSection {
+  background-image: url("/images/allProductsBannerSection.webp");
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }/*# sourceMappingURL=styles.css.map */
