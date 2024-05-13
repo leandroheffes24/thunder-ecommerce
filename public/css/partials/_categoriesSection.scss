@@ -9,6 +9,7 @@
     height: 200px;
     background-color: $categoryContainerBackgroundColor;
     position: relative;
+    cursor: grab;
 }
 
 .categoryTextContainer{
@@ -26,4 +27,76 @@
 .categoryQuantity{
     color: $categoryContainerTextColor;
     font-size: .8rem;
+}
+
+@media (width >= 768px) {
+    .categoriesSection{
+        padding: 80px 30px;
+    }
+
+    .categoryContainer{
+        width: 300px;
+        height: 300px;
+    }
+
+    .categoryTextContainer{
+        bottom: 15%;
+        left: 10%;
+    }
+
+    .categoryName{
+        font-size: 2rem;
+    }
+
+    .categoryQuantity{
+        font-size: 1rem;
+    }
+}
+
+@media (width >= 992px) {
+    .categoriesSection{
+        padding: 70px 20px;
+    }
+
+    .categoryContainer{
+        width: 250px;
+        height: 250px;
+    }
+
+    .categoryTextContainer{
+        bottom: 15%;
+        left: 15%;
+    }
+
+    .categoryName{
+        font-size: 1.5rem;
+    }
+
+    .categoryQuantity{
+        font-size: .8rem;
+    }
+}
+
+@media (width >= 1200px) {
+    .categoriesSection{
+        padding: 80px 40px;
+    }
+
+    .categoryContainer{
+        width: 300px;
+        height: 300px;
+    }
+
+    .categoryTextContainer{
+        bottom: 10%;
+        left: 10%;
+    }
+
+    .categoryName{
+        font-size: 1.8rem;
+    }
+
+    .categoryQuantity{
+        font-size: 1rem;
+    }
 }
