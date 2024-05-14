@@ -316,12 +316,108 @@ header {
     font-size: 1rem;
   }
 }
-.allProductsBannerSection {
-  background-image: url("/images/allProductsBannerSection.webp");
-  background-size: cover;
-  background-position: center;
-  height: 230px;
-  width: 100%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+.indexInformationSection {
+  border-top: 1px solid rgb(200, 200, 200);
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.indexInformationContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.indexInformationIconContainer {
+  width: 20%;
+}
+
+.indexInformationIcon {
+  width: 55px;
+}
+
+.indexInformationTitleAndDescriptionContainer {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.indexInformationTitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (width >= 768px) {
+  .indexInformationSection {
+    padding: 80px 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
+  }
+  .indexInformationContainer {
+    width: 45%;
+  }
+  .indexInformationIconContainer {
+    width: 25%;
+  }
+  .indexInformationIcon {
+    width: 65px;
+  }
+  .indexInformationTitleAndDescriptionContainer {
+    width: 70%;
+    gap: 8px;
+  }
+  .indexInformationTitle {
+    font-size: 1.4rem;
+  }
+  .indexInformationDescription {
+    font-size: 1.2rem;
+  }
+}
+@media (width >= 992px) {
+  .indexInformationSection {
+    padding: 70px 40px;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .indexInformationContainer {
+    width: 30%;
+  }
+  .indexInformationIcon {
+    width: 50px;
+  }
+  .indexInformationTitleAndDescriptionContainer {
+    gap: 5px;
+  }
+  .indexInformationTitle {
+    font-size: 1.1rem;
+  }
+  .indexInformationDescription {
+    font-size: 0.9rem;
+  }
+}
+@media (width >= 1200px) {
+  .indexInformationSection {
+    padding: 80px 80px;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .indexInformationContainer {
+    width: 25%;
+  }
+  .indexInformationIconContainer {
+    width: 20%;
+  }
+  .indexInformationTitleAndDescriptionContainer {
+    width: 77%;
+  }
+  .indexInformationTitle {
+    font-size: 1.2rem;
+  }
+  .indexInformationDescription {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
