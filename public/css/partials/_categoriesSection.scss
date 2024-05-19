@@ -24,11 +24,6 @@
     font-weight: 600;
 }
 
-.categoryQuantity{
-    color: $categoryContainerTextColor;
-    font-size: .8rem;
-}
-
 @media (width >= 768px) {
     .categoriesSection{
         padding: 80px 30px;
@@ -46,10 +41,6 @@
 
     .categoryName{
         font-size: 2rem;
-    }
-
-    .categoryQuantity{
-        font-size: 1rem;
     }
 }
 
@@ -71,10 +62,6 @@
     .categoryName{
         font-size: 1.5rem;
     }
-
-    .categoryQuantity{
-        font-size: .8rem;
-    }
 }
 
 @media (width >= 1200px) {
@@ -94,9 +81,5 @@
 
     .categoryName{
         font-size: 1.8rem;
-    }
-
-    .categoryQuantity{
-        font-size: 1rem;
     }
 }

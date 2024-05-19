@@ -254,11 +254,6 @@ header {
   font-weight: 600;
 }
 
-.categoryQuantity {
-  color: rgb(220, 220, 220);
-  font-size: 0.8rem;
-}
-
 @media (width >= 768px) {
   .categoriesSection {
     padding: 80px 30px;
@@ -273,9 +268,6 @@ header {
   }
   .categoryName {
     font-size: 2rem;
-  }
-  .categoryQuantity {
-    font-size: 1rem;
   }
 }
 @media (width >= 992px) {
@@ -293,9 +285,6 @@ header {
   .categoryName {
     font-size: 1.5rem;
   }
-  .categoryQuantity {
-    font-size: 0.8rem;
-  }
 }
 @media (width >= 1200px) {
   .categoriesSection {
@@ -311,9 +300,6 @@ header {
   }
   .categoryName {
     font-size: 1.8rem;
-  }
-  .categoryQuantity {
-    font-size: 1rem;
   }
 }
 .indexInformationSection {

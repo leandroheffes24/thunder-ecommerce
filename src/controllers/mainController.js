@@ -1,5 +1,7 @@
+const categoriesServices = require("../services/categoriesServices")
+
 module.exports = {
     index: (req, res) => {
-        return res.render("index")
+        return categoriesServices.getAllCategories().then(categories => res.render("index", {categories}))
     }
 }
