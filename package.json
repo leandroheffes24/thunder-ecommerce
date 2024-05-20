@@ -14,7 +14,8 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mysql2": "^3.9.7",
-    "sequelize": "^6.37.3"
+    "sequelize": "^6.37.3",
+    "urlencode": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"

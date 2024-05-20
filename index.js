@@ -4,6 +4,7 @@ const categoriesRouter = require("./src/routers/categoriesRouter")
 const app = express()
 
 app.use(express.static(__dirname + "/public"))
+app.use(express.urlencoded({extended: false}))
 app.use(mainRouter)
 app.use(categoriesRouter)
 
