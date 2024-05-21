@@ -5,8 +5,7 @@ module.exports = {
     category: async (req, res) => {
         const categoryName = req.params.name
         const categoryId = await categoriesServices.getCategoryId(categoryName)
-        
         const categoryProducts = await productsServices.getCategoryProducts(categoryId)
-        // return res.render("categoryPage", {categoryProducts, categoryName: categoryName})
+        return res.render("categoryPage", {categoryProducts: categoryProducts, categoryName: categoryName})
     }
 }

@@ -1,5 +1,3 @@
-// const { DataTypes } = require("sequelize");
-
 module.exports = (sequelize, DataTypes) => {
     const Model = sequelize.define(
         "Categories",
@@ -17,8 +15,8 @@ module.exports = (sequelize, DataTypes) => {
         Model.belongsToMany(model.Products, {
             as: "product",
             through: "products_categories",
-            foreignKey: "id_category",
-            otherKey: "id_product",
+            foreignKey: "id_category", // La clave foránea en la tabla intermedia products_categories
+            otherKey: "id_product", // La clave foránea en la tabla Products
             timestamps: false
         })
     }

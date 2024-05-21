@@ -1,5 +1,3 @@
-// const { DataTypes } = require("sequelize");
-
 module.exports = (sequelize, DataTypes) => {
     const Model = sequelize.define(
         "Products",
@@ -21,8 +19,8 @@ module.exports = (sequelize, DataTypes) => {
         Model.belongsTo(model.Categories, {
             as: "category",
             through: "products_categories",
-            foreignKey: "id_product",
-            otherKey: "id_category",
+            foreignKey: "id_category", // La clave foránea en la tabla Products
+            targetKey: "id", // La clave primaria de la tabla Categories
             timestamps: false
         })
     }

@@ -7,9 +7,12 @@ const categoriesServices = {
 
     getCategoryId: async (categoryName) => {
         const categories = await Categories.findAll()
-        const categorySelected = await categories.filter(category => category.name.toLowerCase() == categoryName)
-        const categoryId = await categorySelected[0].id
-        return categoryId
+        const categorySelected = categories.filter(category => category.name.toLowerCase() == categoryName)
+        if(categorySelected[0] === undefined){
+            return undefined
+        } else {
+            return categorySelected[0].dataValues.id
+        }
     }
 }
 
