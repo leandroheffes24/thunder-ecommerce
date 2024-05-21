@@ -501,4 +501,69 @@ footer {
   .developedByText {
     font-size: 1rem;
   }
+}
+.categoryPageMain {
+  margin-top: 60px;
+  padding: 20px 10px;
+  border: 1px solid red;
+}
+
+.filterSection {
+  display: none;
+}
+
+.categoryTitleNameAndFilterButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.categoryTitleName {
+  font-size: 1.8rem;
+}
+
+.filterButton {
+  background: none;
+  border: none;
+}
+
+.filterIcon {
+  width: 30px;
+}
+
+.categoryProductsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.productContainer {
+  width: 47%;
+  position: relative;
+}
+.productContainer .productImage {
+  width: 100%;
+}
+.productContainer .productPrice {
+  opacity: 0;
+  position: absolute;
+  font-weight: 500;
+  bottom: 15px;
+  left: 15px;
+  transition: 0.5s all;
+}
+.productContainer .productDiscount {
+  opacity: 0;
+  position: absolute;
+  color: rgb(41, 141, 41);
+  font-weight: 500;
+  font-size: 0.8rem;
+  top: 15px;
+  right: 15px;
+  transition: 0.5s all;
+}
+
+.productContainer:hover .productPrice, .productContainer:hover .productDiscount {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
