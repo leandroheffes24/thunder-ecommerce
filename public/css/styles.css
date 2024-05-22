@@ -505,7 +505,6 @@ footer {
 .categoryPageMain {
   margin-top: 60px;
   padding: 20px 10px;
-  border: 1px solid red;
 }
 
 .filterSection {
@@ -536,14 +535,19 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .productContainer {
   width: 47%;
   position: relative;
+  cursor: pointer;
 }
 .productContainer .productImage {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .productContainer .productPrice {
   opacity: 0;
@@ -566,4 +570,94 @@ footer {
 
 .productContainer:hover .productPrice, .productContainer:hover .productDiscount {
   opacity: 1;
+}
+
+@media (width >= 768px) {
+  .categoryPageMain {
+    margin-top: 75px;
+    padding: 20px 40px;
+  }
+  .categoryTitleNameAndFilterButtonContainer {
+    margin-bottom: 30px;
+  }
+  .categoryTitleName {
+    font-size: 2.1rem;
+  }
+  .filterIcon {
+    width: 40px;
+  }
+  .categoryProductsContainer {
+    gap: 30px;
+  }
+  .productContainer {
+    width: 30%;
+  }
+  .productContainer .productPrice {
+    font-size: 1.1rem;
+    left: 25px;
+  }
+  .productContainer .productDiscount {
+    font-size: 1rem;
+  }
+}
+@media (width >= 992px) {
+  .categoryPageMain {
+    margin-top: 55px;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filterSection {
+    width: 20%;
+    display: block;
+  }
+  .filtersTitle {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  .productsCategorySection {
+    width: 80%;
+  }
+  .categoryTitleNameAndFilterButtonContainer {
+    margin-bottom: 20px;
+  }
+  .categoryTitleName {
+    font-size: 1.4rem;
+  }
+  .filterButton {
+    display: none;
+  }
+  .categoryProductsContainer {
+    gap: 20px;
+  }
+  .productContainer {
+    width: 21%;
+  }
+  .productContainer .productPrice {
+    font-size: 0.8rem;
+    left: 15px;
+  }
+  .productContainer .productDiscount {
+    font-size: 0.7rem;
+  }
+}
+@media (width >= 1200px) {
+  .categoryPageMain {
+    margin-top: 55px;
+  }
+  .filtersTitle {
+    font-size: 1.5rem;
+  }
+  .categoryTitleName {
+    font-size: 1.5rem;
+  }
+  .productContainer {
+    width: 23%;
+  }
+  .productContainer .productPrice {
+    font-size: 0.9rem;
+  }
+  .productContainer .productDiscount {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

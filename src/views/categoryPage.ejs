@@ -11,7 +11,7 @@
     <!-- ******************************** MAIN ******************************** -->
     <main class="categoryPageMain">
         <section class="filterSection">
-
+            <h2 class="filtersTitle">FILTERS</h2>
         </section>
 
         <section class="productsCategorySection">
@@ -27,13 +27,13 @@
 
             <div class="categoryProductsContainer">
                 <% categoryProducts.forEach(product => { %>
-                        <div class="productContainer">
-                            <a class="productContainerLink" href="/:id"></a>
-                                <img class="productImage" src="/images/products/<%= product.image %>" alt="<%= product.name %>">
-                                <span class="productPrice">$<%= product.price %></span>
-                                <span class="productDiscount">$<%= product.discount %>%OFF</span>
-                            </a>
-                        </div>
+                    <div class="productContainer">
+                        <a class="productContainerLink" href="/:id"></a>
+                            <img class="productImage" src="/images/products/<%= product.image %>" alt="<%= product.name %>">
+                            <span class="productPrice">$<%= product.price %></span>
+                            <span class="productDiscount">$<%= product.discount %>%OFF</span>
+                        </a>
+                    </div>
                 <% }) %>
             </div>
         </section>
