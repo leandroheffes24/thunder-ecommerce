@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head", {title: "Thunder⚡"}) %>
+</head>
+<body>
+    <!-- ******************************** MAIN ******************************** -->
+    <main class="registerMain">
+        <section class="registerFormSection">
+            <a class="registerHeaderLogoLink" href="/">
+                <img class="registerHeaderLogo" src="/images/logo.png" alt="Logo Thunder">
+            </a>
+
+            <div class="registerTextContainer">
+                <h4 class="registerTitle">REGISTER</h4>
+                <p class="registerText">Register your basic information to create an account.</p>
+            </div>
+
+            <form class="registerForm" action="">
+                <div class="registerFormLabelAndInputContainer">
+                    <label class="registerLabel" for="name">Name</label>
+                    <input class="registerInput" type="text" id="name">
+                </div>
+
+                <div class="registerFormLabelAndInputContainer">
+                    <label class="registerLabel" for="lastName">Last Name</label>
+                    <input class="registerInput" type="text" id="lastName">
+                </div>
+
+                <div class="registerFormLabelAndInputContainer">
+                    <label class="registerLabel" for="email">E-mail</label>
+                    <input class="registerInput" type="email" id="email">
+                </div>
+
+                <div class="registerFormLabelAndInputContainer">
+                    <label class="registerLabel" for="password">Password</label>
+                    <input class="registerInput" type="password" id="password">
+                </div>
+
+                <div class="registerFormLabelAndInputContainer">
+                    <label class="registerLabel" for="profilePicture">Profile Picture</label>
+                    <input class="registerInput" type="file" id="profilePicture">
+                </div>
+
+                <button class="registerButton" type="submit">Register</button>
+            </form>
+        </section>
+
+        <section class="registerImageSection">
+
+        </section>
+    </main>
+    <!-- ******************************** END MAIN ******************************** -->
+</body>
+</html>

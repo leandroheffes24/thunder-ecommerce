@@ -660,4 +660,69 @@ footer {
   .productContainer .productDiscount {
     font-size: 0.8rem;
   }
+}
+.registerFormSection {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registerHeaderLogoLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerHeaderLogo {
+  width: 200px;
+}
+
+.registerTitle {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.registerText {
+  font-size: 0.9rem;
+  color: rgb(116, 116, 116);
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registerLabel {
+  font-size: 0.9rem;
+  margin-left: 2px;
+}
+
+.registerInput {
+  margin-top: 5px;
+  font-size: 1rem;
+  padding: 7px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.registerButton {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+  background-color: rgb(35, 35, 35);
+  color: rgb(220, 220, 220);
+  border: none;
+  border-radius: 10px;
+}
+
+.registerImageSection {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
