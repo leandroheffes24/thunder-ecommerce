@@ -721,8 +721,128 @@ footer {
   color: rgb(220, 220, 220);
   border: none;
   border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .registerImageSection {
   display: none;
+}
+
+@media (width >= 768px) {
+  .registerFormSection {
+    width: 80%;
+    gap: 30px;
+  }
+  .registerHeaderLogo {
+    width: 250px;
+  }
+  .registerTitle {
+    font-size: 1.1rem;
+  }
+  .registerText {
+    font-size: 1rem;
+  }
+  .registerForm {
+    gap: 15px;
+  }
+  .registerLabel {
+    font-size: 1rem;
+  }
+  .registerInput {
+    font-size: 1.1rem;
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+  .registerButton {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+}
+@media (width >= 992px) {
+  .registerMain {
+    display: flex;
+    height: 100vh;
+  }
+  .registerFormSection {
+    width: 50%;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    display: block;
+    padding: 20px 70px 20px 20px;
+  }
+  .registerHeaderLogoLink {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .registerHeaderLogo {
+    width: 200px;
+  }
+  .registerTextContainer {
+    margin-bottom: 20px;
+  }
+  .registerTitle {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .registerText {
+    font-size: 0.9rem;
+  }
+  .registerForm {
+    gap: 15px;
+  }
+  .registerLabel {
+    font-size: 0.9rem;
+  }
+  .registerInput {
+    margin-top: 5px;
+    padding: 7px 10px;
+    font-size: 1rem;
+  }
+  .registerButton {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  .registerImageSection {
+    width: 50%;
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/registerImage.webp");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (width >= 1200px) {
+  .registerFormSection {
+    padding: 50px 160px 50px 50px;
+  }
+  .registerHeaderLogo {
+    width: 200px;
+  }
+  .registerTextContainer {
+    margin-bottom: 25px;
+  }
+  .registerForm {
+    gap: 15px;
+  }
+  .registerLabel {
+    font-size: 0.8rem;
+  }
+  .registerInput {
+    font-size: 0.9rem;
+    margin-top: 3px;
+  }
+  .registerButton {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px;
+  }
 }/*# sourceMappingURL=styles.css.map */
