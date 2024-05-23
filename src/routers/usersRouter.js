@@ -6,5 +6,7 @@ const registerValidations = require("../middlewares/registerValidations")
 
 router.get("/register", usersController.register)
 router.post("/register", multerUpload.single("profilePicture"), registerValidations, usersController.registerProcess)
+router.get("/login", usersController.login)
+router.post("/login", usersController.loginProcess)
 
 module.exports = router

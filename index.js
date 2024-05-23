@@ -3,9 +3,17 @@ const mainRouter = require("./src/routers/mainRouter")
 const categoriesRouter = require("./src/routers/categoriesRouter")
 const usersRouter = require("./src/routers/usersRouter")
 const app = express()
+const session = require("express-session")
 
 app.use(express.static(__dirname + "/public"))
 app.use(express.urlencoded({extended: false}))
+app.use(
+    session({
+        secret:"sessionGeneral",
+        resave:false,
+        saveUninitialized:false,
+    })
+);
 app.use(mainRouter)
 app.use(categoriesRouter)
 app.use(usersRouter)

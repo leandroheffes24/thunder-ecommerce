@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head", {title: "Thunder⚡ Login"}) %>
+</head>
+<body>
+    <main class="loginMain">
+        <section class="registerFormSection">
+            <a class="registerHeaderLogoLink" href="/">
+                <img class="registerHeaderLogo" src="/images/logo.png" alt="Logo Thunder">
+            </a>
+    
+            <div class="registerTextContainer">
+                <h4 class="registerTitle">Login</h4>
+                <p class="registerText">Enter your credentials to sign in.</p>
+            </div>
+    
+            <form class="registerForm" id="loginForm" method="post" action="/login">
+                <div class="registerFormLabelAndInputContainer">
+                    <label class="registerLabel" for="email">E-mail</label>
+                    <input class="registerInput" type="email" id="email" name="email" value="<%= locals.oldData && oldData.email ? oldData.email : "" %>">
+                    <span class="frontendRegisterError" id="emailError"></span>
+                    <% if (locals.errors && errors.email) { %>
+                        <span class="backendRegisterError"><%= errors.email.msg %></span>
+                    <% } %>
+                </div>
+    
+                <div class="registerFormLabelAndInputContainer">
+                    <label class="registerLabel" for="password">Password</label>
+                    <input class="registerInput" type="password" id="password" name="password">
+                    <span class="frontendRegisterError" id="passwordError"></span>
+                    <% if (locals.errors && errors.password) { %>
+                        <span class="backendRegisterError"><%= errors.password.msg %></span>
+                    <% } %>
+                </div>
+    
+                <button class="registerButton" type="submit">Login</button>
+            </form>
+        </section>
+
+        <section class="loginImageSection">
+
+        </section>
+    </main>
+</body>
+</html>
