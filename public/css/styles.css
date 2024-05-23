@@ -11,6 +11,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.display-block {
+  display: block;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -713,6 +717,12 @@ footer {
   width: 100%;
 }
 
+.frontendRegisterError, .backendRegisterError {
+  color: red;
+  font-size: 0.7rem;
+  margin-top: 3px;
+}
+
 .registerButton {
   font-size: 1rem;
   font-weight: 500;
@@ -753,6 +763,9 @@ footer {
     font-size: 1.1rem;
     padding: 10px 12px;
     border-radius: 10px;
+  }
+  .frontendRegisterError, .backendRegisterError {
+    font-size: 0.9rem;
   }
   .registerButton {
     font-size: 1.1rem;
@@ -805,6 +818,9 @@ footer {
     margin-top: 5px;
     padding: 7px 10px;
     font-size: 1rem;
+  }
+  .frontendRegisterError, .backendRegisterError {
+    font-size: 0.7rem;
   }
   .registerButton {
     font-size: 1rem;

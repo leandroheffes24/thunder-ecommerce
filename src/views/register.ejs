@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <%- include("partials/head", {title: "Thunder⚡"}) %>
+    <script src="/js/registerValidations.js" defer></script>
 </head>
 <body>
     <!-- ******************************** MAIN ******************************** -->
@@ -16,30 +17,49 @@
                 <p class="registerText">Register your basic information to create an account.</p>
             </div>
 
-            <form class="registerForm" method="post" action="/register" enctype="multipart/form-data">
+            <form class="registerForm" id="registerForm" method="post" action="/register" enctype="multipart/form-data">
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="name">Name</label>
-                    <input class="registerInput" type="text" id="name" name="name">
+                    <input class="registerInput" type="text" id="name" name="name" value="<%= locals.oldData && oldData.name ? oldData.name : "" %>">
+                    <span class="frontendRegisterError" id="nameError"></span>
+                    <% if (locals.errors && errors.name) { %>
+                        <span class="backendRegisterError"><%= errors.name.msg %></span>
+                    <% } %>
                 </div>
 
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="lastName">Last Name</label>
-                    <input class="registerInput" type="text" id="lastName" name="lastName">
+                    <input class="registerInput" type="text" id="lastName" name="lastName" value="<%= locals.oldData && oldData.lastName ? oldData.lastName : "" %>">
+                    <span class="frontendRegisterError" id="lastNameError"></span>
+                    <% if (locals.errors && errors.lastName) { %>
+                        <span class="backendRegisterError"><%= errors.lastName.msg %></span>
+                    <% } %>
                 </div>
 
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="email">E-mail</label>
-                    <input class="registerInput" type="email" id="email" name="email">
+                    <input class="registerInput" type="email" id="email" name="email" value="<%= locals.oldData && oldData.email ? oldData.email : "" %>">
+                    <span class="frontendRegisterError" id="emailError"></span>
+                    <% if (locals.errors && errors.email) { %>
+                        <span class="backendRegisterError"><%= errors.email.msg %></span>
+                    <% } %>
                 </div>
 
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="password">Password</label>
                     <input class="registerInput" type="password" id="password" name="password">
+                    <span class="frontendRegisterError" id="passwordError"></span>
+                    <% if (locals.errors && errors.password) { %>
+                        <span class="backendRegisterError"><%= errors.password.msg %></span>
+                    <% } %>
                 </div>
 
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="profilePicture">Profile Picture</label>
                     <input class="registerInput" type="file" id="profilePicture" name="profilePicture">
+                    <% if (locals.errors && errors.profilePicture) { %>
+                        <span class="backendRegisterError"><%= errors.profilePicture.msg %></span>
+                    <% } %>
                 </div>
 
                 <button class="registerButton" type="submit">Register</button>
