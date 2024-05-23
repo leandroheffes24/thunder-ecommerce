@@ -16,30 +16,30 @@
                 <p class="registerText">Register your basic information to create an account.</p>
             </div>
 
-            <form class="registerForm" action="">
+            <form class="registerForm" method="post" action="/register" enctype="multipart/form-data">
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="name">Name</label>
-                    <input class="registerInput" type="text" id="name">
+                    <input class="registerInput" type="text" id="name" name="name">
                 </div>
 
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="lastName">Last Name</label>
-                    <input class="registerInput" type="text" id="lastName">
+                    <input class="registerInput" type="text" id="lastName" name="lastName">
                 </div>
 
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="email">E-mail</label>
-                    <input class="registerInput" type="email" id="email">
+                    <input class="registerInput" type="email" id="email" name="email">
                 </div>
 
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="password">Password</label>
-                    <input class="registerInput" type="password" id="password">
+                    <input class="registerInput" type="password" id="password" name="password">
                 </div>
 
                 <div class="registerFormLabelAndInputContainer">
                     <label class="registerLabel" for="profilePicture">Profile Picture</label>
-                    <input class="registerInput" type="file" id="profilePicture">
+                    <input class="registerInput" type="file" id="profilePicture" name="profilePicture">
                 </div>
 
                 <button class="registerButton" type="submit">Register</button>
