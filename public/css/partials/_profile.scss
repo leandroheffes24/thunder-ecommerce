@@ -1,0 +1,177 @@
+@import "./variables";
+
+.profileMain{
+    margin-top: 60px;
+    padding: 30px 0;
+}
+
+.profileImageContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.profileImage{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profileInformationContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 70%;
+    margin: auto;
+}
+
+.profileInformationDescription{
+    font-size: .8rem;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.profileInformation{
+    font-weight: 500;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.editProfileButtonContainer{
+    margin-top: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.editProfileButton{
+    width: 100%;
+    background-color: $categoryContainerBackgroundColor;
+    color: $categoryContainerTextColor;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+@media (width >= 768px){
+    .profileMain{
+        margin-top: 75px;
+        padding: 40px 0;
+    }
+    
+    .profileImageContainer{
+        margin-bottom: 55px;
+    }
+    
+    .profileImage{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profileInformationContainer{
+        gap: 45px;
+    }
+    
+    .profileInformationDescription{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    .profileInformation{
+        font-size: 1.3rem;
+    }
+    
+    .editProfileButtonContainer{
+        margin-top: 50px;
+    }
+    
+    .editProfileButton{
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (width >= 992px){
+    .profileMain{
+        margin-top: 55px;
+        padding: 20px 0 40px;
+        display: flex;
+    }
+    
+    .profileImageContainer{
+        width: 40%;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .profileImage{
+        width: 280px;
+        height: 280px;
+    }
+
+    .profileInformationAndEditProfileButtonContainer{
+        width: 60%;
+    }
+    
+    .profileInformationContainer{
+        gap: 25px;
+    }
+    
+    .profileInformationDescription{
+        font-size: .7rem;
+        font-weight: 500;
+        margin-bottom: 3px;
+    }
+    
+    .profileInformation{
+        font-size: .9rem;
+    }
+    
+    .editProfileButtonContainer{
+        margin-top: 30px;
+    }
+    
+    .editProfileButton{
+        padding: 8px;
+        font-size: .7rem;
+    }
+}
+
+@media (width >= 1200px){
+    .profileMain{
+        padding: 70px 0 100px;
+    }
+    
+    .profileImage{
+        width: 360px;
+        height: 360px;
+    }
+    
+    .profileInformationContainer{
+        gap: 35px;
+    }
+    
+    .profileInformationDescription{
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+    
+    .profileInformation{
+        font-size: 1.1rem;
+    }
+    
+    .editProfileButtonContainer{
+        margin-top: 45px;
+    }
+    
+    .editProfileButton{
+        padding: 10px;
+        font-size: .9rem;
+    }
+}

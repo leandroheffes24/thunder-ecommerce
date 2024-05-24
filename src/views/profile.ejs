@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head", {title: "Thunder⚡ Profile"}) %>
+</head>
+<body>
+    <!-- ******************************** HEADER ******************************** -->
+    <%- include("partials/header") %>
+    <!-- ******************************** END HEADER ******************************** -->
+
+    <!-- ******************************** MAIN ******************************** -->
+    <main class="profileMain">
+        <div class="profileImageContainer">
+            <img class="profileImage" src="/images/usersPictures/<%= locals.userLoggedIn.profile_picture %>" alt="Profile picture">
+        </div>
+
+        <div class="profileInformationAndEditProfileButtonContainer">
+            <div class="profileInformationContainer">
+                <div class="profileInformationBox">
+                    <p class="profileInformationDescription">Name</p>
+                    <p class="profileInformation"><%= locals.userLoggedIn.name %></p>
+                </div>
+    
+                <div class="profileInformationBox">
+                    <p class="profileInformationDescription">Last name</p>
+                    <p class="profileInformation"><%= locals.userLoggedIn.last_name %></p>
+                </div>
+    
+                <div class="profileInformationBox">
+                    <p class="profileInformationDescription">E-mail</p>
+                    <p class="profileInformation"><%= locals.userLoggedIn.email %></p>
+                </div>
+    
+                <div class="profileInformationBox">
+                    <p class="profileInformationDescription">Rank</p>
+                    <p class="profileInformation"><%= locals.userLoggedIn.rank %></p>
+                </div>
+            </div>
+    
+            <div class="editProfileButtonContainer">
+                <button class="editProfileButton">EDIT PROFILE</button>
+            </div>
+        </div>
+    </main>
+    <!-- ******************************** END MAIN ******************************** -->
+
+    <!-- ******************************** FOOTER ******************************** -->
+    <%- include("partials/footer") %>
+    <!-- ******************************** END FOOTER ******************************** -->
+</body>
+</html>

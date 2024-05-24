@@ -12,6 +12,10 @@ module.exports = {
         return res.render("register")
     },
 
+    profile: (req, res) => {
+        return res.render("profile")
+    },
+
     registerProcess: async (req, res) => {
         let errors = validationResult(req)
 

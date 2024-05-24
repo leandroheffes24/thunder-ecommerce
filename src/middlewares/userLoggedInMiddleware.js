@@ -1,6 +1,7 @@
 function userLoggedInMiddleware (req, res, next) {
     if(req.session && req.session.userLoggedIn){
-        res.locals.userLoggedIn = true
+        let user = req.session.userLoggedIn
+        res.locals.userLoggedIn = user
     } else {
         res.locals.userLoggedIn = false
     }
