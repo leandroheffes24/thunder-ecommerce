@@ -861,4 +861,10 @@ footer {
     font-weight: 600;
     padding: 10px;
   }
+}
+.loginImageSection {
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/loginImage.webp");
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=styles.css.map */

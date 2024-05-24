@@ -47,7 +47,7 @@ module.exports = {
         if(!bcrypt.compareSync(req.body.password, userInDB.password)){
             return res.render("login", {errors: {password: {msg: "Incorrect password"}}})
         } else {
-            req.session.userLogged = userInDB
+            req.session.userLoggedIn = userInDB
             if (userInDB.rank == "admin"){
                 req.session.admin = true
             }

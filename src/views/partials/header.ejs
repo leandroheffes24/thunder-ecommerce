@@ -20,11 +20,18 @@
             <p class="headerNavbarText">MENU</p>
         </div>
 
-        <div class="headerNavbarLinksContainer">
-            <a class="headerNavbarLink" href="/">Home</a>
-            <a class="headerNavbarLink" href="/register">Register</a>
-            <a class="headerNavbarLink" href="/login">Login</a>
-        </div>
+        <% if(locals.userLoggedIn){ %>
+            <div class="headerNavbarLinksContainer">
+                <a class="headerNavbarLink" href="/">Home</a>
+                <a class="headerNavbarLink" href="/profile">Profile</a>
+            </div>
+        <% } else { %>
+            <div class="headerNavbarLinksContainer">
+                <a class="headerNavbarLink" href="/">Home</a>
+                <a class="headerNavbarLink" href="/register">Register</a>
+                <a class="headerNavbarLink" href="/login">Login</a>
+            </div>
+        <% } %>
 
         <div class="headerCloseNavbarButtonContainer">
             <button class="headerCloseNavbarButton">

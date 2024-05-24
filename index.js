@@ -4,6 +4,7 @@ const categoriesRouter = require("./src/routers/categoriesRouter")
 const usersRouter = require("./src/routers/usersRouter")
 const app = express()
 const session = require("express-session")
+const userLoggedInMiddleware = require("./src/middlewares/userLoggedInMiddleware")
 
 app.use(express.static(__dirname + "/public"))
 app.use(express.urlencoded({extended: false}))
@@ -14,6 +15,7 @@ app.use(
         saveUninitialized:false,
     })
 );
+app.use(userLoggedInMiddleware)
 app.use(mainRouter)
 app.use(categoriesRouter)
 app.use(usersRouter)
