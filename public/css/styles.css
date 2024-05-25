@@ -931,6 +931,9 @@ footer {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .editProfileLink {
@@ -978,10 +981,14 @@ footer {
   }
   .editProfileLinkContainer {
     margin-top: 50px;
+    gap: 12px;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .editProfileLink {
     padding: 15px;
     font-size: 1.2rem;
+    width: 49%;
   }
 }
 @media (width >= 992px) {

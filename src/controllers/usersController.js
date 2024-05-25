@@ -65,5 +65,10 @@ module.exports = {
         const userId = req.params.id
         req.session.userLoggedIn = {...req.session.userLoggedIn, ...user}
         return usersServices.updateUser(user, userId).then(res.redirect("/profile"))
+    },
+
+    logout: (req, res) => {
+        req.session.destroy()
+        return res.redirect("/")
     }
 }

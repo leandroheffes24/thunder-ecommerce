@@ -11,5 +11,6 @@ router.post("/login", usersController.loginProcess)
 router.get("/profile", usersController.profile)
 router.get("/edit-profile", usersController.editProfile)
 router.post("/edit-profile/:id", usersController.editProfileProcess)
+router.get("/logout", usersController.logout)
 
 module.exports = router
