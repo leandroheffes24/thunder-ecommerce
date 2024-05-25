@@ -16,6 +16,10 @@ module.exports = {
         return res.render("profile")
     },
 
+    editProfile: (req, res) => {
+        return res.render("edit-profile")
+    },
+
     registerProcess: async (req, res) => {
         let errors = validationResult(req)
 
@@ -57,5 +61,10 @@ module.exports = {
             }
             return res.redirect("/")
         }
+    },
+
+    editProfileProcess: (req, res) => {
+        const user = req.body
+        console.log("USUARIO => ", user);
     }
 }

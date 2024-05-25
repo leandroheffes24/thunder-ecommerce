@@ -878,6 +878,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
+  position: relative;
 }
 
 .profileImage {
@@ -886,6 +887,23 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+.editProfilePictureButton {
+  position: absolute;
+  bottom: -12px;
+  background-color: rgb(0, 209, 209);
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.editProfilePictureIcon {
+  width: 20px;
+  color: rgb(240, 240, 240);
 }
 
 .profileInformationContainer {
@@ -908,14 +926,16 @@ footer {
   border-bottom: 1px solid rgb(207, 207, 207);
 }
 
-.editProfileButtonContainer {
+.editProfileLinkContainer {
   margin-top: 30px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.editProfileButton {
+.editProfileLink {
+  display: block;
+  text-align: center;
   width: 100%;
   background-color: rgb(50, 50, 50);
   color: rgb(220, 220, 220);
@@ -924,7 +944,6 @@ footer {
   border-radius: 10px;
   font-weight: 500;
   font-size: 0.8rem;
-  cursor: pointer;
 }
 
 @media (width >= 768px) {
@@ -939,6 +958,13 @@ footer {
     width: 200px;
     height: 200px;
   }
+  .editProfilePictureButton {
+    bottom: -17px;
+    padding: 5px;
+  }
+  .editProfilePictureIcon {
+    width: 27px;
+  }
   .profileInformationContainer {
     gap: 45px;
   }
@@ -950,10 +976,10 @@ footer {
   .profileInformation {
     font-size: 1.3rem;
   }
-  .editProfileButtonContainer {
+  .editProfileLinkContainer {
     margin-top: 50px;
   }
-  .editProfileButton {
+  .editProfileLink {
     padding: 15px;
     font-size: 1.2rem;
   }
@@ -974,6 +1000,12 @@ footer {
     width: 280px;
     height: 280px;
   }
+  .editProfilePictureButton {
+    bottom: -15px;
+  }
+  .editProfilePictureIcon {
+    width: 20px;
+  }
   .profileInformationAndEditProfileButtonContainer {
     width: 60%;
   }
@@ -988,10 +1020,10 @@ footer {
   .profileInformation {
     font-size: 0.9rem;
   }
-  .editProfileButtonContainer {
+  .editProfileLinkContainer {
     margin-top: 30px;
   }
-  .editProfileButton {
+  .editProfileLink {
     padding: 8px;
     font-size: 0.7rem;
   }
@@ -1004,6 +1036,12 @@ footer {
     width: 360px;
     height: 360px;
   }
+  .editProfilePictureButton {
+    bottom: -18px;
+  }
+  .editProfilePictureIcon {
+    width: 23px;
+  }
   .profileInformationContainer {
     gap: 35px;
   }
@@ -1014,11 +1052,26 @@ footer {
   .profileInformation {
     font-size: 1.1rem;
   }
-  .editProfileButtonContainer {
+  .editProfileLinkContainer {
     margin-top: 45px;
   }
-  .editProfileButton {
+  .editProfileLink {
     padding: 10px;
     font-size: 0.9rem;
   }
+}
+.editProfileMain {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.editProfileTitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.editProfileForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }/*# sourceMappingURL=styles.css.map */

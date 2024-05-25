@@ -1,0 +1,17 @@
+@import "./variables";
+
+.editProfileMain{
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.editProfileTitle{
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.editProfileForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

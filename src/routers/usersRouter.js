@@ -9,5 +9,7 @@ router.post("/register", multerUpload.single("profilePicture"), registerValidati
 router.get("/login", usersController.login)
 router.post("/login", usersController.loginProcess)
 router.get("/profile", usersController.profile)
+router.get("/edit-profile", usersController.editProfile)
+router.post("/edit-profile/:id", usersController.editProfileProcess)
 
 module.exports = router
