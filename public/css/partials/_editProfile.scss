@@ -15,3 +15,103 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.editProfileButton{
+    font-size: .8rem;
+    font-weight: 500;
+    background-color: $categoryContainerBackgroundColor;
+}
+
+@media (width >= 768px) {
+    .editProfileMain{
+        margin-top: 75px;
+        padding: 20px 40px;
+    }
+    
+    .editProfileTitle{
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+    
+    .editProfileForm{
+        gap: 40px;
+    }
+
+    .editProfileLabel{
+        font-size: 1.1rem;
+    }
+
+    .editProfileInput{
+        padding: 15px;
+        font-size: 1.4rem;
+    }
+    
+    .editProfileButton{
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
+
+@media (width >= 992px) {
+    .editProfileMain{
+        margin-top: 55px;
+    }
+    
+    .editProfileTitle{
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    
+    .editProfileForm{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .editProfileLabelAndInputContainer{
+        width: 48%;
+    }
+
+    .editProfileLabelAndInputEmailContainer{
+        width: 100%;
+    }
+
+    .editProfileLabel{
+        font-size: .8rem;
+    }
+
+    .editProfileInput{
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+    
+    .editProfileButton{
+        font-size: 1rem;
+        padding: 7px;
+        width: 100%;
+    }
+}
+
+@media (width >= 1200px) {
+    .editProfileTitle{
+        font-size: 1.5rem;
+    }
+    
+    .editProfileForm{
+        gap: 40px;
+    }
+
+    .editProfileLabel{
+        font-size: .9rem;
+    }
+
+    .editProfileInput{
+        font-size: 1.1rem;
+    }
+    
+    .editProfileButton{
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

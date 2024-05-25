@@ -17,6 +17,16 @@ const productsServices = {
             profile_picture: newUser.profile_picture,
             rank: newUser.rank,
         })
+    },
+
+    updateUser: (user, userId) => {
+        return Users.update({
+            name: user.name,
+            last_name: user.last_name,
+            email: user.email
+        }, {
+            where: {id: userId}
+        })
     }
 }
 

@@ -56,15 +56,14 @@ module.exports = {
             return res.render("login", {errors: {password: {msg: "Incorrect password"}}})
         } else {
             req.session.userLoggedIn = userInDB
-            if (userInDB.rank == "admin"){
-                req.session.admin = true
-            }
             return res.redirect("/")
         }
     },
 
     editProfileProcess: (req, res) => {
         const user = req.body
-        console.log("USUARIO => ", user);
+        const userId = req.params.id
+        req.session.userLoggedIn = {...req.session.userLoggedIn, ...user}
+        return usersServices.updateUser(user, userId).then(res.redirect("/profile"))
     }
 }

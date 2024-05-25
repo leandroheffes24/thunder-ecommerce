@@ -12,22 +12,22 @@
         <h3 class="editProfileTitle">EDIT PROFILE</h3>
 
         <form class="editProfileForm" id="editProfileForm" action="/edit-profile/<%= locals.userLoggedIn.id %>?_method=put" method="post">
-            <div class="registerFormLabelAndInputContainer">
-                <label class="registerLabel" for="name">Name</label>
-                <input class="registerInput" type="text" id="name" name="name" value="<%= locals.userLoggedIn.name %>">
+            <div class="registerFormLabelAndInputContainer editProfileLabelAndInputContainer">
+                <label class="registerLabel editProfileLabel" for="name">Name</label>
+                <input class="registerInput editProfileInput" type="text" id="name" name="name" value="<%= locals.userLoggedIn.name %>">
             </div>
 
-            <div class="registerFormLabelAndInputContainer">
-                <label class="registerLabel" for="lastName">Last name</label>
-                <input class="registerInput" type="text" id="lastName" name="lastName" value="<%= locals.userLoggedIn.last_name %>">
+            <div class="registerFormLabelAndInputContainer editProfileLabelAndInputContainer">
+                <label class="registerLabel editProfileLabel" for="last_name">Last name</label>
+                <input class="registerInput editProfileInput" type="text" id="last_name" name="last_name" value="<%= locals.userLoggedIn.last_name %>">
             </div>
 
-            <div class="registerFormLabelAndInputContainer">
-                <label class="registerLabel" for="email">Email</label>
-                <input class="registerInput" type="email" id="email" name="email" value="<%= locals.userLoggedIn.email %>">
+            <div class="registerFormLabelAndInputContainer editProfileLabelAndInputEmailContainer">
+                <label class="registerLabel editProfileLabel" for="email">Email</label>
+                <input class="registerInput editProfileInput" type="email" id="email" name="email" value="<%= locals.userLoggedIn.email %>">
             </div>
 
-            <button class="registerButton" type="submit">EDIT</button>
+            <button class="registerButton editProfileButton" type="submit">EDIT</button>
         </form>
     </main>
 
