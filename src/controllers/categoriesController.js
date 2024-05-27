@@ -7,5 +7,11 @@ module.exports = {
         const categoryId = await categoriesServices.getCategoryId(categoryName)
         const categoryProducts = await productsServices.getCategoryProducts(categoryId)
         return res.render("categoryPage", {categoryProducts: categoryProducts, categoryName: categoryName})
+    },
+
+    productDetail: (req, res) => {
+        const productId = req.params.productId
+        console.log("id del producto =>", productId);
+        return res.render("productDetail")
     }
 }

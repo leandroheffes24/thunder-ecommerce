@@ -28,7 +28,7 @@
             <div class="categoryProductsContainer">
                 <% categoryProducts.forEach(product => { %>
                     <div class="productContainer">
-                        <a class="productContainerLink" href="/:id"></a>
+                        <a class="productContainerLink" href="/products/<%= product.id %>">
                             <img class="productImage" src="/images/products/<%= product.image %>" alt="<%= product.name %>">
                             <span class="productPrice">$<%= product.price %></span>
                             <span class="productDiscount">$<%= product.discount %>%OFF</span>

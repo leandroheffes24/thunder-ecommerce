@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head", {title: "Thunder⚡"}) %>
+</head>
+<body>
+    <!-- ******************************** HEADER ******************************** -->
+    <%- include("partials/header") %>
+    <!-- ******************************** END HEADER ******************************** -->
+
+    <!-- ******************************** MAIN ******************************** -->
+    <main class="productDetailMain">
+        <div class="productDetailContainer">
+            <div class="productDetailImageContainer">
+                <img class="productDetailImage" src="/images/products/<%= product.image %>" alt="<%= product.product_name %>">
+            </div>
+
+            <div class="productInformationContainer">
+                <h2 class="productDetailTitle"><%= product.product_name %></h2>
+
+                <div class="productDetailPriceAndDiscountContainer">
+                    <span class="productDetailPrice">$<%= product.price %></span>
+                    <span class="productDetailDiscount"><%= product.discount %>% OFF</span>
+                </div>
+
+                <div class="productDetailButtonsContainer">
+                    <form action="">
+                        <button class="productDetailBuyNowButton">Buy now</button>
+                    </form>
+
+                    <form action="">
+                        <button class="productDetailAddToCartButton">Add to cart</button>
+                    </form>
+
+                    <% if(locals.userLoggedIn.rank == "admin"){ %>
+                        <form action="">
+                            <button class="productDetailDeleteButton">Delete product</button>
+                        </form>
+    
+                        <form action="">
+                            <button class="productDetailEditProduct">Edit product</button>
+                        </form>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ******************************** MAIN ******************************** -->
+
+    <!-- ******************************** FOOTER ******************************** -->
+    <%- include("partials/footer") %>
+    <!-- ******************************** END FOOTER ******************************** -->
+</body>
+</html>

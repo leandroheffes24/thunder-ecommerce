@@ -1174,4 +1174,162 @@ footer {
     font-size: 1rem;
     padding: 8px;
   }
+}
+.productDetailMain {
+  margin-top: 60px;
+}
+
+.productDetailContainer {
+  margin: 80px 20px 30px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px gray;
+}
+
+.productDetailImage {
+  width: 100%;
+}
+
+.productInformationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productDetailTitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.productDetailPrice {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.productDetailDiscount {
+  color: rgb(55, 223, 55);
+  font-weight: 500;
+}
+
+.productDetailButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productDetailBuyNowButton, .productDetailAddToCartButton, .productDetailDeleteButton, .productDetailEditProduct {
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+  color: rgb(220, 220, 220);
+  border: none;
+  padding: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.productDetailAddToCartButton {
+  background-color: rgb(70, 70, 70);
+}
+
+.productDetailDeleteButton {
+  background-color: rgb(201, 0, 0);
+}
+
+.productDetailEditProduct {
+  background-color: rgb(67, 67, 255);
+}
+
+@media (width >= 768px) {
+  .productDetailMain {
+    margin-top: 75px;
+  }
+  .productDetailContainer {
+    margin: 100px 30px 50px;
+    padding: 20px;
+    display: flex;
+  }
+  .productDetailImageContainer {
+    width: 50%;
+  }
+  .productInformationContainer {
+    padding-left: 20px;
+    width: 50%;
+    gap: 30px;
+  }
+  .productDetailTitle {
+    font-size: 1.5rem;
+  }
+  .productDetailPrice {
+    font-size: 1.6rem;
+  }
+  .productDetailDiscount {
+    font-size: 1.1rem;
+  }
+  .productDetailButtonsContainer {
+    gap: 10px;
+  }
+  .productDetailBuyNowButton, .productDetailAddToCartButton, .productDetailDeleteButton, .productDetailEditProduct {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+  }
+}
+@media (width >= 992px) {
+  .productDetailMain {
+    margin-top: 55px;
+  }
+  .productDetailContainer {
+    margin: 70px 40px 30px;
+  }
+  .productDetailImage {
+    max-height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .productInformationContainer {
+    padding-left: 30px;
+  }
+  .productDetailTitle {
+    font-size: 1.4rem;
+  }
+  .productDetailPrice {
+    font-size: 1.5rem;
+  }
+  .productDetailDiscount {
+    font-size: 0.9rem;
+  }
+  .productDetailButtonsContainer {
+    gap: 10px;
+  }
+  .productDetailBuyNowButton, .productDetailAddToCartButton, .productDetailDeleteButton, .productDetailEditProduct {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+@media (width >= 1200px) {
+  .productDetailContainer {
+    margin: 80px 40px 40px;
+  }
+  .productDetailImage {
+    max-height: 550px;
+  }
+  .productDetailTitle {
+    font-size: 1.5rem;
+  }
+  .productDetailPrice {
+    font-size: 1.6rem;
+  }
+  .productDetailDiscount {
+    font-size: 1rem;
+  }
+  .productDetailButtonsContainer {
+    gap: 10px;
+  }
+  .productDetailBuyNowButton, .productDetailAddToCartButton, .productDetailDeleteButton, .productDetailEditProduct {
+    font-size: 1rem;
+    padding: 12px;
+  }
 }/*# sourceMappingURL=styles.css.map */
