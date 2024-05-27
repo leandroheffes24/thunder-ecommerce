@@ -20,6 +20,10 @@ module.exports = {
         return res.render("edit-profile")
     },
 
+    shoppingCart: (req, res) => {
+        return res.render("shoppingCart")
+    },
+
     registerProcess: async (req, res) => {
         let errors = validationResult(req)
 

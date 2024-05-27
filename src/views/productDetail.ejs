@@ -33,8 +33,8 @@
                     </form>
 
                     <% if(locals.userLoggedIn.rank == "admin"){ %>
-                        <form action="">
-                            <button class="productDetailDeleteButton">Delete product</button>
+                        <form action="/shopping-cart/<%= product.id %>">
+                            <button type="submit" class="productDetailDeleteButton">Delete product</button>
                         </form>
     
                         <form action="">
