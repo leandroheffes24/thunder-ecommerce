@@ -27,6 +27,14 @@ const productsServices = {
         }, {
             where: {id: userId}
         })
+    },
+
+    updateProfilePicture: (newProfilePicture, userId) => {
+        return Users.update({
+            profile_picture: newProfilePicture
+        }, {
+            where: {id: userId}
+        })
     }
 }
 

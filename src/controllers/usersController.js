@@ -67,6 +67,19 @@ module.exports = {
         return usersServices.updateUser(user, userId).then(res.redirect("/profile"))
     },
 
+    editProfilePicture: (req, res) => {
+        let errors = validationResult(req)
+
+        if(errors.errors.length > 0){
+            return res.render("profile", {errors: errors.mapped()})
+        }
+
+        const newProfilePicture = req.file.filename
+        const userId = req.params.id
+        req.session.userLoggedIn = {...req.session.userLoggedIn, profile_picture: newProfilePicture}
+        return usersServices.updateProfilePicture(newProfilePicture, userId).then(res.redirect("/profile"))
+    },
+
     logout: (req, res) => {
         req.session.destroy()
         return res.redirect("/")
