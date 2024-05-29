@@ -28,4 +28,4 @@ app.set("view engine", "ejs")
 app.set("views", __dirname + "/src/views")
 
 const PORT = process.env.port || 3012
-app.listen(PORT, console.log(`running server on port ${PORT}`))
+app.listen(PORT, console.log(`running server on portt ${PORT}`))
